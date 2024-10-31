@@ -8,10 +8,11 @@
 </head>
 <body>
   <div class="container">
-    <div class="login-container">
+    <!-- Halaman Login -->
+    <div class="login-container" id="loginPage">
       <div class="popup" id="popupUsername">
-        <h2>Login Page</h2>
-        <input type="text" id="username" placeholder="Email atau Username" required>
+        <h2>Masukkan Nama atau Username</h2>
+        <input type="text" id="username" placeholder="Nama atau Username" required>
         <button onclick="nextStep()">Selanjutnya</button>
       </div>
 
@@ -21,8 +22,35 @@
         <button onclick="submitLogin()">Login</button>
       </div>
     </div>
+
+    <!-- Halaman Pengisian CV -->
+    <div class="cv-container" id="cvPage" style="display: none;">
+      <h2>Form CV Lamaran Kerja</h2>
+      <form id="cvForm">
+        <label>Nama Lengkap</label>
+        <input type="text" id="fullName" placeholder="Nama Lengkap" required>
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Email" required>
+
+        <label>Pendidikan Terakhir</label>
+        <input type="text" id="education" placeholder="Pendidikan Terakhir" required>
+
+        <label>Pengalaman Kerja</label>
+        <textarea id="experience" placeholder="Pengalaman Kerja" rows="4" required></textarea>
+
+        <label>Keterampilan</label>
+        <textarea id="skills" placeholder="Keterampilan" rows="4" required></textarea>
+
+        <!-- Input foto -->
+        <label>Upload Foto</label>
+        <input type="file" id="photo" accept="image/*" required>
+
+        <button type="button" onclick="submitCV()">Kirim CV</button>
+      </form>
+    </div>
   </div>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
