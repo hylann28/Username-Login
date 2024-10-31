@@ -1,57 +1,91 @@
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+/* Mengatur tinggi dan lebar halaman serta latar belakang gradien */
+body, html {
+  height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
 }
 
+/* Membuat container utama untuk pusat */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Pengaturan dasar untuk login box */
 .login-container {
   display: flex;
   justify-content: center;
-}
-
-.popup {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   width: 300px;
-  animation: popup 0.5s ease;
+  animation: fadeIn 1s ease-in-out;
 }
 
-@keyframes popup {
+/* Efek fade-in animasi */
+@keyframes fadeIn {
   from {
     opacity: 0;
-    transform: scale(0.8);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
   }
 }
 
+/* Desain tampilan pop-up */
+.popup {
+  width: 100%;
+  text-align: center;
+}
+
+/* Style input dan tombol */
 input {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin: 10px 0;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+/* Animasi saat input di-hover */
+input:focus {
+  border-color: #6e8efb;
+  box-shadow: 0 0 8px rgba(110, 142, 251, 0.2);
+  outline: none;
 }
 
 button {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   color: #fff;
-  background-color: #28a745;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  font-weight: bold;
   cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(110, 142, 251, 0.2);
 }
 
 button:hover {
-  background-color: #218838;
+  background: linear-gradient(135deg, #5a78d1, #8b61c3);
+}
+
+/* Style tambahan untuk teks */
+h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 18px;
 }
