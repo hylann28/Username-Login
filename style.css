@@ -89,3 +89,9 @@ h2 {
   margin-bottom: 15px;
   font-size: 18px;
 }
+
+/* Input file foto */
+.cv-container input[type="file"] {
+  margin-top: 10px;
+  border: none;
+}
