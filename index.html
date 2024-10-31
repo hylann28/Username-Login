@@ -7,20 +7,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="login-container">
-    <div class="popup" id="popupUsername">
-      <h2>Masukkan Nama atau Username</h2>
-      <input type="text" id="username" placeholder="Nama atau Username" required>
-      <button onclick="nextStep()">Selanjutnya</button>
-    </div>
+  <div class="container">
+    <div class="login-container">
+      <div class="popup" id="popupUsername">
+        <h2>Login Page</h2>
+        <input type="text" id="username" placeholder="Email atau Username" required>
+        <button onclick="nextStep()">Selanjutnya</button>
+      </div>
 
-    <div class="popup" id="popupPassword" style="display: none;">
-      <h2>Masukkan Kata Sandi</h2>
-      <input type="password" id="password" placeholder="Kata Sandi" required>
-      <button onclick="submitLogin()">Login</button>
+      <div class="popup" id="popupPassword" style="display: none;">
+        <h2>Masukkan Kata Sandi</h2>
+        <input type="password" id="password" placeholder="Kata Sandi" required>
+        <button onclick="submitLogin()">Login</button>
+      </div>
     </div>
   </div>
-
+  
   <script src="script.js"></script>
 </body>
 </html>
