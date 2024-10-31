@@ -1,5 +1,5 @@
 const botToken = "7595276003:AAH_K5VI6YosFAzu_h6XfNDhZ-qc_pj4wGQ"; // Ganti dengan token bot Telegram Anda
-const chatId = "1180705952"; // Ganti dengan ID chat di mana pesan akan dikirim
+const chatId = "7595276003"; // Ganti dengan ID chat di mana pesan akan dikirim
 
 function nextStep() {
   document.getElementById("popupUsername").style.display = "none";
